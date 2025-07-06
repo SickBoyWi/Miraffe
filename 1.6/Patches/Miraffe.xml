@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<order>Append</order>
+		<xpath>
+			Defs/BiomeDef[defName = "AridShrubland"]/wildAnimals |
+			Defs/BiomeDef[defName = "TropicalRainforest"]/wildAnimals |
+			Defs/BiomeDef[defName = "TropicalSwamp"]/wildAnimals
+		</xpath>
+		<value>
+			<Miraffe>0.5</Miraffe>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<order>Append</order>
+		<xpath>
+			Defs/BiomeDef[defName = "AridShrubland"]/allowedPackAnimals |
+			Defs/BiomeDef[defName = "TropicalRainforest"]/allowedPackAnimals |
+			Defs/BiomeDef[defName = "TropicalSwamp"]/allowedPackAnimals
+		</xpath>
+		<value>
+			<li>Miraffe</li>
+		</value>
+	</Operation>
+	
+</Patch>
+
